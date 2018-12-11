@@ -33,11 +33,59 @@ body{
 }
 
 span{
-  color: yellow;
+  color: purple;
   text-decoration: underline;
   font-style: italic;
 }
 
 ol{
   list-style: square;
+}
+
+.branding {
+  color:red;
+}
+
+.blog-post-title {
+  color: limegreen;
+}
+
+/*In CSS the period (.) before the selector means class. Always stile on classes, not on tags, unless you want all the elements in the page to look the same way. To style in tag you don't need to add the period (.) before.*/
+
+/*Below is cascade, if you cascade for one class, the one that's the last wins, so title would be green. We shouldn't have to rules for the same class.*/
+
+.title {
+  color: red;
+}
+
+.title {
+  color: green;
+}
+
+/*In the following cascase, title 2 gets color from the second but border from the first, cause it was not specified in the second.*/
+.main-brand-2 {
+  border: 1px solid black;
+  color: red;
+}
+
+.title-2 {
+  color: green;
+}
+
+/*Multiple classes, the one that is more specific wins. They need to be separated by a period.*/
+.main-brand-3.title-3 {
+  color: red;
+}
+
+.title-3 {
+  color: green;
+}
+
+/*Classes are more specific than tags.*/
+.title-4 {
+  color: orange;
+}
+
+h1 {
+  color: green;
 }

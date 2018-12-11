@@ -19,11 +19,29 @@
               
             <p> Paragraphs can't contain divs, but divs can contian paragraphs.</p>
 
-            <p>Paragraphs can contain spans, <span>this is a span</span>and this is not anymore.</p>
+            <p>Paragraphs can contain spans, <span>this is a span</span> and this is not anymore.</p>
             
             <ol>
                 <li>Item 1</li>
                 <li>Item 2</li>
+                <li>Item 3</li>
             </ol>
+            <h4 class="branding">My Super Cool Brand</h4>
+            <h4 class="blog-post-title">My Cool Blog Post</h4>
+
+            <p>In CSS the period (.) before the selector means class. Always stile on classes, not on tags, unless you want all the elements in the page to look the same way. To style in tag you don't need to add the period (.) before.</p>
+            
+            <h4 class="title">Cool Title</h4>
+            <p>Below is cascade, if you cascade for one class, the one that's the last wins, so title would be green. We shouldn't have to rules for the same class.</p>
+            
+            <p>In the following cascase, title 2 gets color from the second but border from the first, cause it was not specified in the second.</p>
+            <h4 class="title-2 main-brand-2">Branding here</h4>
+
+            <p>Multiple classes below, the one that is more specific wins. They need to be separated by a period.</p>
+            <h4 class="title-3 main-brand-3">Branding here</h4>
+
+            <p>Classes are more specific than tags.</p>
+            <h4 class="title-4">Another h4</h4>
+            
         </body>
 </html>
