@@ -1,0 +1,43 @@
+h1, p {
+    font-family: Lato;
+  }
+  
+  h2 {
+    color: limegreen;
+    font-size: 60px;
+    font-weight: normal;
+    text-decoration: underline;
+    text-transform: uppercase;
+    border: 3px solid pink;
+  }
+  
+  h3 {
+    color: #0400ff;
+    font-size: 66 0em;
+    font-weight: lighter;
+    text-decoration: line-through;
+    text-transform: lowercase;
+    border-style: dotted;
+    border-color: orange;
+    border-width: 3px;
+  }
+
+  div{
+    color: blueviolet;
+}
+
+body{
+  color: black;
+  font-style: normal;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+span{
+  color: yellow;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+ol{
+  list-style: square;
+}
