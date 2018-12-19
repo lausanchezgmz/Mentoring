@@ -89,3 +89,47 @@ ol{
 h1 {
   color: green;
 }
+
+.hover-example {
+  width: 100px;
+  height: 100px;
+  background-color: limegreen;
+  color: white;
+}
+.hover-example:hover {
+  background-color: crimson;
+  width: 150px;
+  height: 150px;
+}
+
+ .first-child-example {
+  color: crimson;
+}
+.first-child-example:first-child {
+  color: limegreen;
+}
+
+  .ex-box {
+  border: 3px solid #aaa;
+  background-color: #eee;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-size: 30px;
+}
+.ex-box:last-of-type {
+  clear: right;
+}
+
+/*Block measurements*/
+.example {
+border: 3px solid red;
+padding: 5px;
+margin: 25px;
+background-color: white;
+}
