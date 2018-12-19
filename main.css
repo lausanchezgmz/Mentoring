@@ -133,3 +133,35 @@ padding: 5px;
 margin: 25px;
 background-color: white;
 }
+
+.box-1 {
+  border: 1px solid black;
+  color: white;
+  background-color: blue;
+  height: 150px;
+  width: 300px;
+}
+.box-2 {
+  border: 1px solid black;
+  color: white;
+  background-color: red;
+  height: 100px;
+  width: 300px;
+}
+.box-3 {
+  border: 1px solid black;
+  color: white;
+  background-color: green;
+  height: 200px;
+  width: 100px;
+}
+
+.flex-container {
+  display: flex;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.floated .box div {
+  float: left;
+}
