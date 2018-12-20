@@ -165,3 +165,56 @@ background-color: white;
 .floated .box div {
   float: left;
 }
+
+/* You always need to include the flex-container first*/
+ 
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.column {
+  flex-direction: column;
+}
+/*you can do column-reverse*/
+
+.jc-right {
+  justify-content: flex-end;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+/*you can do space-evently*/
+
+.jc-sa {
+  justify-content: space-around;
+}
+
+  .ai-fe {
+  align-items: flex-end;
+}
+/*you can add padding-top for instance*/
+.ai-center {
+  align-items: center;
+}
+
+ .ai-stretch {
+  align-items: stretch;
+  height: 200px;
+}
+/* remove the height from the three boxes */
+.no-height {
+  height: inherit;
+}
+
+/* How to align only one box and change order:
+.box-2 {
+  align-self: flex-end;
+  order: 5;
+}
+*/
+
