@@ -1,5 +1,65 @@
-h1, p {
+h1 {
     font-family: 'Snell Roundhand', Times, serif;
     text-align: center;
-    padding-top: 5%;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: normal;
+    padding-top: 10px;
 }
+
+.box {
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    display: column;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.box-1 {
+    border-left: 0.5px solid black;
+    width: 25%;
+}
+
+.box-2 {
+    
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black;
+    width: 50%;
+}
+
+.box-3 {
+    border-right: 0.5px solid black;
+    width: 25%;
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+
+h2 {
+    color: black;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    
+}
+
+p {
+    color: black;
+    font-weight : normal;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    padding: 10px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
