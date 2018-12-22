@@ -38,3 +38,16 @@
 .half {
     width: 50%;
 }
+
+.three-quarter {
+    width: 75%;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-item {
+    width: 100%;
+}
