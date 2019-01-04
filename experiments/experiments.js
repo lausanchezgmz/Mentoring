@@ -262,6 +262,7 @@ console.log(me.getAddress());
 
 
 //Arrays = ordered list of something
+//They are declared with square brackets [] and they use coma.
 const daysOfTheWeek = [
   "Monday",
   "Tuesday",
@@ -275,3 +276,118 @@ console.log(daysOfTheWeek);
 console.log(daysOfTheWeek[0]);
 console.log(daysOfTheWeek[1]);
 console.log(daysOfTheWeek[6]);
+
+//Arrays methods
+const primeNumbers = [1, 2, 3, 5, 7, 11, 13, 17];
+console.log(primeNumbers.length);
+console.log(primeNumbers.join(" | "));
+
+//Arrays - push method
+const courses = [
+  { teacher: "Kyle Simpson", course: "JS Function Lite" },
+  { teacher: "Sarah Drasner", course: "Intro to Vue" },
+  { teacher: "Brian Holt", course: "Complete Intro to React v3" },
+  { teacher: "Steve Kinney", course: "State Management" }
+];
+
+courses.push({ teacher: "Sean Larkinn", course: "Webpack" });
+
+console.log(courses);
+
+courses[2] = { teacher: "Brian Holt", course: "Complete Intro to React v4" };
+
+console.log(courses);
+
+//Array - console log
+const cities = [
+  "Seattle",
+  "San Francisco",
+  "Salt Lake City",
+  "Amsterdam",
+  "Hong Kong"
+];
+
+// method 1
+for (let i = 0; i < cities.length; i++) {
+  console.log(cities[i]);
+}
+
+// method 2
+cities.forEach(function(city) {
+  console.log(city);
+});
+
+console.log(numberOfTimesRan)
+
+//The Dom - how JS interacts with HTML
+<style>
+  .red-square {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+  }
+</style>
+
+<div class="red-square"></div>
+
+<script>
+  const redSquare = document.querySelector('.red-square');
+  redSquare.style.backgroundColor = 'limegreen';
+</script>
+
+//When you want to change all elements:
+<ul>
+  <li class="js-target">Unchanged</li>
+  <li class="js-target">Unchanged</li>
+  <li>Won't Change</li>
+  <li class="js-target">Unchanged</li>
+  <li>Won't Change</li>
+  <li class="js-target">Unchanged</li>
+</ul>
+<script>
+  const elementsToChange = document.querySelectorAll('.js-target');
+  for (let i = 0; i < elementsToChange.length; i++) {
+    const currentElement = elementsToChange[i];
+    currentElement.innerText = "Modified by JavaScript!";
+  }
+</script>
+
+//Events and listeners
+<button class="event-button">Click me!</button>
+<script>
+  const button = document.querySelector('.event-button');
+  button.addEventListener('click', function () {
+    alert("Hey there!");
+  });
+  </script>
+
+//Input tag
+<input placeholder="type into me!" class="input-to-copy" />
+<p class="p-to-copy-to">Nothing has happened yet.</p>
+<script>
+  const input = document.querySelector('.input-to-copy');
+  const paragraph = document.querySelector('.p-to-copy-to');
+
+  input.addEventListener("keyup", function() {
+    paragraph.innerText  = input.value;
+  });
+</script>
+
+//Another example
+<style>
+  .color-box {
+    background-color: limegreen;
+    width: 100px;
+    height: 100px;
+  }
+</style>
+<div class="color-box"></div>
+<input class="color-input" placeholder="Type a color here!" />
+<script>
+  const input = document.querySelector('.color-input');
+  const paragraph = document.querySelector('.color-box');
+
+  input.addEventListener("change", function() {
+    paragraph.style.backgroundColor  = input.value;
+  });
+</script>
