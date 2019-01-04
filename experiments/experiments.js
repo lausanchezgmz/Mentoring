@@ -335,7 +335,7 @@ console.log(numberOfTimesRan)
   redSquare.style.backgroundColor = 'limegreen';
 </script>
 
-//When you want to change all elements:
+//The Dom - When you want to change all elements:
 <ul>
   <li class="js-target">Unchanged</li>
   <li class="js-target">Unchanged</li>
@@ -352,7 +352,7 @@ console.log(numberOfTimesRan)
   }
 </script>
 
-//Events and listeners
+//The Dom - Events and listeners
 <button class="event-button">Click me!</button>
 <script>
   const button = document.querySelector('.event-button');
@@ -361,7 +361,7 @@ console.log(numberOfTimesRan)
   });
   </script>
 
-//Input tag
+//The Dom - Input tag
 <input placeholder="type into me!" class="input-to-copy" />
 <p class="p-to-copy-to">Nothing has happened yet.</p>
 <script>
@@ -373,7 +373,7 @@ console.log(numberOfTimesRan)
   });
 </script>
 
-//Another example
+//The Dom - Another example
 <style>
   .color-box {
     background-color: limegreen;
@@ -389,5 +389,19 @@ console.log(numberOfTimesRan)
 
   input.addEventListener("change", function() {
     paragraph.style.backgroundColor  = input.value;
+  });
+</script>
+
+//The Dom - Event delegation
+<div class="button-container">
+  <button>1</button>
+  <button>2</button>
+  <button>3</button>
+  <button>4</button>
+  <button>5</button>
+</div>
+<script>
+  document.querySelector('.button-container').addEventListener('click', function(event) {
+    alert(`You clicked on button ${event.target.innerText}`);
   });
 </script>
